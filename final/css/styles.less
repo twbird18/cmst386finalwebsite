@@ -1,0 +1,212 @@
+@color0:#C5A8ED; //accents
+@color1: #5DFDCB; //background
+@color2: #464655; //text
+@color3: #C9F9FF; //2nd background
+@color4: #313824; //Link text
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Roboto&display=swap');
+
+body{
+    background: @color1;
+    background: rgb(223,224,226);
+    background: radial-gradient(circle, rgba(223,224,226,1) 0%, rgba(93,253,203,1) 71%, rgba(197,168,237,1) 100%);
+    color: @color2;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    position:relative;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a{
+    color: @color4;
+}
+
+header{
+    background:lighten(@color3, 5%);
+    position: relative;
+    width: 100%;
+    top:0;
+    left: 0;
+    margin: 0;
+}
+#title{
+
+    font-size: 4em;
+    font-family: 'Pacifico', cursive;
+    color: @color1;
+    margin: 0;
+
+}
+
+#tag{
+
+    font-size: 2em;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin: 0;
+    color:@color0;
+}
+//Navigation Bar Styling
+#mainnav {
+    background: @color3;
+		float: left;
+		-webkit-transition: .5s;
+        transition: .5s;
+        width: 100%;
+        border-top: solid;
+        margin: 0px 0px 75px 0px;
+	ul {
+        display: flex;
+        justify-content: space-around;
+		ul {
+			position: absolute;
+			left: 0;
+			top: 100%;
+			visibility: hidden;
+            opacity: 0;
+            display: block;
+			ul {
+				left: 100%;
+				top: 0;
+			}
+		}
+	}
+	li {
+		float: left;
+		position: relative;
+		width: 150px;
+		list-style: none;
+		-webkit-transition: .5s;
+		transition: .5s;
+		&:hover {
+			background: darken(@color3, 15%);
+			li {
+				background:  darken(@color3, 15%);
+			}
+			>ul {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+		li {
+			&:hover {
+				background: darken(@color3, 25%);
+				li {
+					background:  darken(@color3, 25%);
+				}
+			}
+			li {
+				&:hover {
+					background:  darken(@color3, 30%);
+				}
+			}
+		}
+	}
+	>ul {
+		>li {
+			>a {
+				text-transform: uppercase;
+			}
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+		padding: 5px 15px;
+
+	}
+}
+
+#logo{
+    float: left;
+    height: 150px;
+    width: 300px;
+
+}
+
+img{
+    width: 400px;
+    height: 500px;
+}
+
+.recipe{
+    width: 90%;
+    background: @color3;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.foodimg{
+    top: 10px;
+    left: 10px;
+    flex:1;
+    text-align: center;
+    img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.ingredients{
+    flex:1;
+    #ingtitle{
+        text-align: center;
+        font-size: 1.5em;
+        color: darken(@color0, 40%);
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+footer{
+
+    text-align: center;
+
+}
+.container{
+    margin-top:25px;
+}
+
+#rtitle{
+    text-align: center;
+    font-size: 2em;
+    color: darken(@color0, 20%);
+    width: 100%;
+    border-bottom: 2px inset @color1;
+}
+
+#dirtitle{
+    text-align: center;
+    font-size: 1.5em;
+    color: darken(@color0, 40%);
+}
+
+.additional{
+    width:100%;
+    #addtitle{
+        text-align: center;
+    font-size: 1.5em;
+    color: darken(@color0, 40%);
+
+    }
+}
+
+.nutition{
+    width: 100%;
+    #nuttitle{
+        text-align: center;
+    font-size: 1.5em;
+    color: darken(@color0, 40%);
+    }
+}
