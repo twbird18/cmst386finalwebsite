@@ -17,6 +17,10 @@
 	<!--Implement LESS preprocessor using javascript-->
 	<link rel="stylesheet/less" type="text/css" href="../final/css/styles.less" />
 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
 </head>
 
@@ -49,18 +53,64 @@
 
 	</header>
 
-<section>
-<a href="../final/scramble.html">tofu scramble</a>
-<a href="../final/cpboatmeal.html">Chocolate Peanut Butter Oatmeal</a>
-<a href="../final/southwestburrito.html">Southwest Breakfast Burrito</a>
+<div class="container">
 
-</section>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <a href="../final/scramble.html">
+      <img src="../final/images/scramble.jpg" alt="Tofu Scramble"></a>
+      <div class="carousel-caption">
+        <h3>Tofu Scramble</h3>
+        <p>Delicious Southwest Tofu Scramble. Great for a make-ahead breakfast and other dishes.</p>
+      </div>
+    </div>
+
+    <div class="item">
+    <a href="../final/southwestburrito.html">
+      <img src="../final/images/southwestburrito.jpg" alt="Southwest Burrito"></a>
+      <div class="carousel-caption">
+        <h3>Southwest Burrito</h3>
+        <p>Quick Burrito with tofu scramble & hashbrowns. Makes for great freezer meals.</p>
+      </div>
+    </div>
+
+    <div class="item"><a href="../final/cpboatmeal.html">
+      <img src="../final/images/cpbo.jpg" alt="chocolate oatmeal"></a>
+      <div class="carousel-caption">
+        <h3>Chocolate Peanut Butter Oatmeal</h3>
+        <p>Great for cold winter mornings!</p>
+      </div>
+    </div>
 
 
+  </div>
 
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div>
+
+
+<div class="container">
     <footer>
     <p>copyright 2019</p>
-    </footer>
+    </footer></div>
 </body>
 
 </html>
