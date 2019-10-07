@@ -18,6 +18,11 @@
 	<link rel="stylesheet/less" type="text/css" href="../final/css/styles.less" />
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+
+    <!--Add carousel-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -34,7 +39,7 @@
                         <li><a href="../final/breakfast.html">Breakfast Recipes</a></li>
                         <li><a href="../final/lunch.html">Lunch Recipes</a></li>
                         <li><a href="../final/dinner.html">Dinner Recipes</a></li>
-                        <li><a href="../final/snacks.html">Snack Recipes</a></li>
+
                     </ul></li>
 				<li><a href="../final/shopping.html">Grocery List</a></li>
 				<li><a href="../final/about.html">About</a>
@@ -50,16 +55,67 @@
 	</header> <div id="search"><script async src="https://cse.google.com/cse.js?cx=011181468143127248327:6ulozd0asjm"></script>
 <div class="gcse-search"></div></div>
 
-<section>
+<div class="container">
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <a href="../final/sloppyjoe.html">
+      <img src="../final/images/sloppyjoe.jpg" alt="Sloppy Joe"></a>
+      <div class="carousel-caption">
+        <h3>Sloppy Joe</h3>
+        <p>A great, easily changeable dish that adds vegetables and protein to your meal.</p>
+      </div>
+    </div>
+
+    <div class="item">
+    <a href="../final/shepherdspie.html">
+      <img src="../final/images/shepherdspie.jpg" alt="Shepherd's Pie"></a>
+      <div class="carousel-caption">
+        <h3>Shepherd's Pie</h3>
+        <p>Shepherd's Pie. The perfect vegan casserole.</p>
+      </div>
+    </div>
+
+    <div class="item"><a href="../final/roastedprimavera.html">
+      <img src="../final/images/roastedprimavera.jpg" alt="Roasted Primavera"></a>
+      <div class="carousel-caption">
+        <h3>Roasted Vegetable Primavera</h3>
+        <p>Great Winter Primavera!</p>
+      </div>
+    </div>
 
 
-</section>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div>
 
 
 
+<div class="container">
     <footer>
-    <p>copyright 2019</p>
-    </footer>
+    <a href="../final/privacy.html">Privacy Policy</a><br>
+    <a href="../final/sitemap.xml">Sitemap</a>
+    <p>&copy copyright 2019</p>
+    </footer></div>
 </body>
 
 </html>

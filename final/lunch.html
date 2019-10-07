@@ -18,6 +18,11 @@
 	<link rel="stylesheet/less" type="text/css" href="../final/css/styles.less" />
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+
+    <!--Add carousel-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -34,7 +39,7 @@
                         <li><a href="../final/breakfast.html">Breakfast Recipes</a></li>
                         <li><a href="../final/lunch.html">Lunch Recipes</a></li>
                         <li><a href="../final/dinner.html">Dinner Recipes</a></li>
-                        <li><a href="../final/snacks.html">Snack Recipes</a></li>
+                   
                     </ul></li>
 				<li><a href="../final/shopping.html">Grocery List</a></li>
 				<li><a href="../final/about.html">About</a>
@@ -50,16 +55,67 @@
 	</header> <div id="search"><script async src="https://cse.google.com/cse.js?cx=011181468143127248327:6ulozd0asjm"></script>
 <div class="gcse-search"></div></div>
 
-<section>
+<div class="container">
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <a href="../final/spaghettimeatballs.html">
+      <img src="../final/images/spaghettisauce.jpg" alt="spaghetti sauce"></a>
+      <div class="carousel-caption">
+        <h3>Spaghetti and Meatballs</h3>
+        <p>Roasted Tomato & Veggie Sauce with Meatballs. Pefect make ahead lunch dish.</p>
+      </div>
+    </div>
+
+    <div class="item">
+    <a href="../final/tacos.html">
+      <img src="../final/images/tacos.jpg" alt="Tacos with Avocado Crema"></a>
+      <div class="carousel-caption">
+        <h3>Tacos with crema</h3>
+        <p>Tasty Black Bean and fire roasted corn tacos with delicious avocado crema.</p>
+      </div>
+    </div>
+
+    <div class="item"><a href="../final/sushibowl.html">
+      <img src="../final/images/sushibowl.jpg" alt="sushi bowl"></a>
+      <div class="carousel-caption">
+        <h3>Sushi Bowl</h3>
+        <p>Cucumber and Avocado Sushi bowl that's delicous hot or cold.</p>
+      </div>
+    </div>
 
 
-</section>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div>
 
 
 
+<div class="container">
     <footer>
-    <p>copyright 2019</p>
-    </footer>
+    <a href="../final/privacy.html">Privacy Policy</a><br>
+    <a href="../final/sitemap.xml">Sitemap</a>
+    <p>&copy copyright 2019</p>
+    </footer></div>
 </body>
 
 </html>
