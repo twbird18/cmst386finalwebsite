@@ -80,7 +80,7 @@ header{
         transition: .5s;
         width: 100%;
         border-top: solid;
-        margin: 0px 0px 75px 0px;
+        //margin: 0px 0px 75px 0px;
 	ul {
         display: flex;
         justify-content: space-around;
@@ -207,6 +207,12 @@ header{
 footer{
 
     text-align: center;
+    a{
+        float:left;
+    }
+    p{
+        float:right;
+    }
 
 }
 .container{
@@ -251,3 +257,36 @@ footer{
     width: 70%;
     margin: auto;
   }
+  #search{
+      width:30%;
+      float:right;
+  }
+
+  #contactform{
+      width: 75%;
+      margin: auto;
+  }
+  .form-group{
+      text-align: center;
+      background-color: white;
+      .help-block{
+          display: block;
+          font-size: 0.75em;
+      }
+      #textinput{
+          background-color: @color3;
+          color:@color2;
+      }
+
+    #comment{
+        width: 350px;
+        height: 250px;
+        background-color: @color3;
+        color:@color2;
+  }
+  }
+
+  .asterisk{
+      color: darken(@color0, 20%);
+  }
+
