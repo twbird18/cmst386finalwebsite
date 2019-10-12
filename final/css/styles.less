@@ -35,16 +35,43 @@ h1,h2,h3,h4,h5{
     background: @color3;
     margin: auto;
     flex-wrap: wrap;
+    h1{
+        margin: 0 auto;
+        padding-top: 25px;
+
+    }
     p{
         margin-left: 25px;
     }
     main{
         margin: auto;
+
+
     }
 }
 
+.desc{
+            font-size: 1.5em;
+        }
+
+#wrapper{
+
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
 
 
+  #leftcolumn{
+      width: 25%;
+  }
+  #rightcolumn{
+      width: 70%;
+  }
+  #leftcolumn, #rightcolumn{
+      float:left;
+  }
+
+}
 
 
 a{
@@ -55,23 +82,25 @@ header{
     background:lighten(@color3, 5%);
     position: relative;
     width: 100%;
-    height: 175px;
+    display: inline-block !important;
     top:0;
     left: 0;
-    margin: 0;
+    margin: 0 0 20px 0;
+
 }
 #title{
 
     font-size: 4em;
     font-family: 'Pacifico', cursive;
     color: @color1;
-    margin: 0;
+
     text-shadow: 3px 3px 2px @color2;
+    position: relative;
 
 }
 
 #tag{
-
+    letter-spacing: 0.1em;
     font-size: 2em;
     font-family: 'Pacifico', cursive;
     text-align: center;
@@ -86,7 +115,7 @@ header{
 		-webkit-transition: .5s;
         transition: .5s;
         width: 100%;
-        border-top: solid;
+        border-bottom: solid;
         //margin: 0px 0px 75px 0px;
 	ul {
         display: flex;
@@ -155,6 +184,7 @@ header{
     float: left;
     height: 150px;
     width: 300px;
+    padding-top: 30px;
 
 }
 
@@ -167,13 +197,12 @@ header{
         width: 100%;
     text-align: center;}
     .tag{
-        background-color: @color3;
-        border: 1px black solid;
+
         width: 220px;
         height: 220px;
         margin: auto;
-        padding: 10px;
-        text-align: center;
+        padding: 25px;
+
 
         img{
             margin: auto;
@@ -214,6 +243,12 @@ header{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    border-radius: 40px;
+    -moz-border-radius:40px;
+-webkit-border-radius:40px;
+
+-webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 0px 5px 15px 5px rgba(0,0,0,0);
+box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 0px 5px 15px 5px rgba(0,0,0,0);
 
 }
 
@@ -244,18 +279,33 @@ header{
 
 
 footer{
-
+    margin-top: 25px;
+    width: 90%;
     text-align: center;
     a{
-        float:left;
+        display: block;
     }
     p{
-        float:right;
+        display: block;
     }
 
 }
 .container{
-    margin-top:200px;
+    display: flex;
+    margin-top: 40px;
+    margin: 0 auto;
+    width: 90%;
+    background: @color3;
+    border-radius: 40px;
+    -moz-border-radius:40px;
+-webkit-border-radius:40px;
+
+-webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 0px 5px 15px 5px rgba(0,0,0,0);
+box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 0px 5px 15px 5px rgba(0,0,0,0);
+
+main{
+    margin: 0 auto;
+}
 }
 
 #rtitle{
@@ -274,6 +324,7 @@ footer{
 
 .additional{
     width:100%;
+    padding: 15px;
     #addtitle{
         text-align: center;
     font-size: 1.5em;
@@ -282,14 +333,7 @@ footer{
     }
 }
 
-.nutition{
-    width: 100%;
-    #nuttitle{
-        text-align: center;
-    font-size: 1.5em;
-    color: darken(@color0, 40%);
-    }
-}
+
 
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -300,8 +344,11 @@ footer{
   #search{
       width:30%;
       float:right;
+      margin-bottom: 25px;
   }
 
+#contact{
+    margin: 0 auto;
   #contactform{
       width: 75%;
       margin: auto;
@@ -324,7 +371,7 @@ footer{
         background-color: @color3;
         color:@color2;
   }
-  }
+  }}
 
   .asterisk{
       color: darken(@color0, 20%);
@@ -334,10 +381,11 @@ footer{
   //privacy policy tab table
 
   .tabs {
+      width: 80%;
      display: flex;
      flex-wrap: wrap;
      background: #c7b5c9;
-     margin: 15px 5px 15px 10px;
+     margin: 0 auto;
      padding: 10px;
      border-radius: 35px;
     /*add multi-colored shadow effect to container*/
@@ -397,9 +445,93 @@ table{
   width: 100%;
 }
 
-.nutrition{
-    float: left;
+.nutritioncontainer{
+    #nuttitle{
+        text-align: center;
+        font-size: 1.5em;
+        color: darken(@color0, 40%);
+        text-decoration: underline;
+
+
+    }
+
 }
-.food{
-    float: right;
+
+.breadcontainer{
+    margin-left: 33%;
+    width: 50%;
+    border-radius: 40px;
+    -moz-border-radius:40px;
+-webkit-border-radius:40px;
+-webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 5px 15px 5px rgba(93,253,203,0);
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 5px 15px 5px rgba(93,253,203,0);
+
+}
+
+
+
+
+
+ul.breadcrumb {
+	padding: 10px 16px;
+	list-style: none;
+	background-color:@color3;
+    text-align: center;
+    border-radius: 40px;
+    margin-top: 30px;
+
+	li {
+		display: inline;
+		font-size: 18px;
+		a {
+			color: @color4;
+			text-decoration: none;
+			&:hover {
+				background-color: darken(@color3, 10%);
+				text-decoration: underline;
+			}
+		}
+	}
+	li {
+		&:before {
+			padding: 8px;
+			background-color: darken(@color3, 15%);
+			content: "/\00a0";
+		}
+	}
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+
+  &hover {
+  background-color: #555;
+}
+}
+
+
+#myCarousel{
+    width: 75%;
+    height: 500px;
+    display: flex;
+    margin: 0 auto;
+    .carousel-inner{
+        > .item, > img, >a, > img{
+                    max-height: 500px;
+                }
+            }
+
 }

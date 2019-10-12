@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="This site contains simple vegan dishes for one person or for meal prep.">
+	<meta name="description" content="Tofu breakfast scramble.">
     <meta name="keywords" content="vegan, cooking for one, recipes, food, meal prep">
+    <meta name="robots" content="index">
+    <meta name="author" content="Jennifer Brady">
 
     <title>Vegan4One</title>
 
@@ -18,15 +20,13 @@
 	<link rel="stylesheet/less" type="text/css" href="../final/css/styles.less" />
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+
 </head>
 
 <body>
-	<header>
-		<img id="logo" src="../final/images/logo.png" alt="vegan4one logo">
-		<h1 id="title">Vegan 4 One</h1>
-		<h4 id="tag">Food for yourself!</h4>
 
-        <nav id="mainnav">
+	<header>
+    <nav id="mainnav">
             <ul>
             	<li><a href="../final/index.html">Home</a></li>
 				<li><a href="../final/recipes.html">Recipes</a>
@@ -47,12 +47,35 @@
         </nav>
 
 
-	</header> <div id="search"><script async src="https://cse.google.com/cse.js?cx=011181468143127248327:6ulozd0asjm"></script>
+		<img id="logo" src="../final/images/logo.png" alt="vegan4one logo">
+		<h1 id="title">Vegan 4 One</h1>
+		<h4 id="tag">Food for yourself!</h4>
+	</header>
+    <!--back to top anchor-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script type="text/javascript" src="../final/scrollbutton.js"></script>
+
+<div id="search"><script async src="https://cse.google.com/cse.js?cx=011181468143127248327:6ulozd0asjm"></script>
 <div class="gcse-search"></div></div>
 
-<div class="container">
 
-    <article class="recipe">
+<div id="wrapper">
+
+<!--left nutrition information column-->
+
+<div id="leftcolumn">
+    <aside class="nutritioncontainer">
+<a name="nutrition"></a>
+
+    <h4 id="nuttitle">Nutrition Information*</h4>
+    <a href="https://www.verywellfit.com/recipe-nutrition-analyzer-4157076" target="_blank"><img width="320" height="604" src="https://www.verywellfit.com/thmb/2O4xcICuwdAQ7ilB-czFQtBeFVg=/1000x0/Nutrition-Label-Embed-1132375571-d2074b85e6e44eaa91931422c2316348.png" /></a>
+
+    </aside></div>
+
+    <!--right recipe information column-->
+    <div id="rightcolumn">
+
+    <article class="recipe"><a name="recipe"></a>
     <h1 id="rtitle">Tofu Scramble</h1>
 
     <div class="foodimg">
@@ -63,7 +86,7 @@
 
     </div>
 
-    <div class="ingredients">
+    <div class="ingredients"><a name="ingredients"></a>
     <h3 id="ingtitle">Ingredients</h3>
     <ul>
 
@@ -85,6 +108,7 @@
 
     </div>
     <div class="directions">
+    <a name="directions"></a>
     <h3 id="dirtitle">Recipe</h3>
     <ol>
     <li>Pat tofu dry. Slice. Drain and press.</li>
@@ -104,22 +128,27 @@
     <h3 id="addtitle">Information</h3>
     <p>Serve with skillet potatoes, as a burrito, or with toast. Top with Avocado, Salsa, fresh Tomato, or Hemp Hearts. </p>
     <p> Freeze leftovers up to 1 month or refrigerate for up to 5 days. </p>
-    </div>
+    </div></article></div>
 
-    <div class="nutrition">
-    <h4 id="nuttitle">Nutrition Information*</h4>
-    <a href="https://www.verywellfit.com/recipe-nutrition-analyzer-4157076" target="_blank"><img width="320" height="604" src="https://www.verywellfit.com/thmb/2O4xcICuwdAQ7ilB-czFQtBeFVg=/1000x0/Nutrition-Label-Embed-1132375571-d2074b85e6e44eaa91931422c2316348.png" /></a>
-
-    </div>
-
-
-    </article>
 
 </div>
 
 
-<div class="container">
+<div class="breadcontainer">
+
+<ul class="breadcrumb">
+  <li><a href="#recipe">Recipe</a></li>
+  <li><a href="#ingredients">Ingredients</a></li>
+  <li><a href="#directions">Directions</a></li>
+  <li> <a href="#nutrition""> Nutrition</a></li>
+
+</ul>
+</div>
+
+<div class="footercontainer">
     <footer>
+    <a href="../final/privacy.html">Privacy Policy</a><br>
+    <a href="../final/sitemap.xml">Sitemap</a>
     <p>&copy copyright 2019</p>
     </footer></div>
 </body>
