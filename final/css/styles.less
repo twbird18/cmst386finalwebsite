@@ -39,11 +39,20 @@ h1,h2,h3,h4,h5{
         padding-top: 25px;
 
     }
+    h2{
+        margin: 0 auto;
+        padding-top: 25px;
+    }
     p{
         margin-left: 25px;
     }
-    main{
+    .picture{
         margin: auto;
+        h5{
+            width: 100%;
+            text-align: center;
+            margin: 0;
+        }
 
 
     }
@@ -279,13 +288,19 @@ box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 
 
 footer{
     margin-top: 25px;
-    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     a{
         display: block;
+        grid-column-start: 2;
     }
     p{
         display: block;
+        grid-column-start: 2;
+    }
+    .footernotes{
+        grid-column-start: 3;
     }
 
 }
@@ -301,7 +316,7 @@ footer{
 -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 0px 5px 15px 5px rgba(0,0,0,0);
 box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 0px 5px 15px 5px rgba(0,0,0,0);
 
-main{
+.picture{
     margin: 0 auto;
 }}
 
@@ -406,7 +421,11 @@ iframe{
   }
 
 #contact{
-    margin: 0 auto;
+    margin: 100px auto 0;
+
+    h1{
+                text-align: center;
+            }
   #contactform{
       width: 75%;
       margin: auto;
@@ -418,7 +437,7 @@ iframe{
           display: block;
           font-size: 0.75em;
       }
-      #textinput{
+      #textinput #textinput2{
           background-color: @color3;
           color:@color2;
       }
@@ -622,11 +641,13 @@ ul.breadcrumb {
     }
 
     #contact #contactform{
+
         width: 100%;
         fieldset{
             padding: initial;
             border: initial;
             margin: 0;
+
         }
     }
     #myCarousel{
