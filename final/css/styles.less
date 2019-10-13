@@ -7,14 +7,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Roboto&display=swap');
 
 body{
-    background: @color1;
-    background: rgb(223,224,226);
-    background: radial-gradient(circle, rgba(223,224,226,1) 0%, rgba(93,253,203,1) 71%, rgba(197,168,237,1) 100%);
+
     color: @color2;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     margin: 0;
     position:relative;
+    width: 100%;
 }
 h1,h2,h3,h4,h5{
     font-family: 'Roboto', sans-serif;
@@ -310,7 +309,7 @@ main{
 
 .thumbcontainer{
     overflow: hidden;
-    margin: 0 auto;
+    margin: 0 auto 100px;
     width: 90%;
     background: @color3;
     border-radius: 40px;
@@ -594,3 +593,150 @@ ul.breadcrumb {
             }
 
 }
+
+@media only screen and (max-width:479px){
+    body{
+    background: @color1;
+    background: rgb(93,253,203);
+    }
+
+    #title{
+        text-align: center;
+    }
+    #search{
+        display: none;
+    }
+    div[class*='container'], .tabs{
+        width: 100%;
+
+        border-radius: initial;
+        -moz-border-radius:initial;
+-webkit-border-radius:initial;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+
+    #contact #contactform{
+        width: 100%;
+        fieldset{
+            padding: initial;
+            border: initial;
+            margin: 0;
+        }
+    }
+    #myCarousel{
+        width: initial;
+        height: initial;
+        margin-top: 50px;
+    }
+
+    #wrapper{
+        margin: initial;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        #leftcolumn, #rightcolumn{
+            width: 100%;
+            margin-top: 15px;
+
+        .recipe{
+font-size: 1.25em;
+            width: 100%;
+        border-radius: initial;
+        -moz-border-radius:initial;
+-webkit-border-radius:initial;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+
+
+        .foodimg{
+
+        flex: initial;
+
+        figure{
+            margin: initial;
+
+            img{
+                width: 200px;
+                height: 200px;
+
+            }
+            }
+        }
+        .ingredients{
+            flex: initial;
+        }
+    }
+        }
+
+    }
+
+    .breadcontainer{
+        margin-left: initial;
+    }
+}
+
+@media only screen and (max-width:1024px) and (min-width:480px){
+
+    #wrapper{
+        margin: initial;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        #leftcolumn, #rightcolumn{
+            width: 100%;
+            margin-top: 15px;
+
+        .recipe{
+font-size: 1.25em;
+            width: 100%;
+        border-radius: initial;
+        -moz-border-radius:initial;
+-webkit-border-radius:initial;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+
+
+        .foodimg{
+
+        flex: initial;
+
+        figure{
+            margin: initial;
+
+            img{
+                width: 400px;
+                height: 400px;
+
+            }
+            }
+        }
+        .ingredients{
+            flex: initial;
+        }
+    }
+        }
+
+    }
+
+    .breadcontainer{
+        margin-left: initial;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 480px){
+    body{
+        background: @color1;
+    background: rgb(93,253,203);
+        background: radial-gradient(circle, rgba(223,224,226,1) 0%, rgba(93,253,203,1) 71%, rgba(197,168,237,1) 100%);
+    }
+
+
+}
+
