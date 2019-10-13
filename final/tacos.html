@@ -5,9 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="This site contains simple vegan dishes for one person or for meal prep.">
-    <meta name="keywords" content="vegan, cooking for one, recipes, food, meal prep">
+    <meta name="keywords" content="vegan, cooking for one, recipes, food, Tacos">
+    <meta name="robots" content="index">
+    <meta name="author" content="Jennifer Brady">
 
-    <title>Vegan4One</title>
+
+    <title>Vegan4One - Tacos</title>
 
 	<!--favicon addition-->
 	<link rel="icon" href="../final/images/favicon.png" type="image/gif">
@@ -22,11 +25,7 @@
 
 <body>
 	<header>
-		<img id="logo" src="../final/images/logo.png" alt="vegan4one logo">
-		<h1 id="title">Vegan 4 One</h1>
-		<h4 id="tag">Food for yourself!</h4>
-
-        <nav id="mainnav">
+    <nav id="mainnav">
             <ul>
             	<li><a href="../final/index.html">Home</a></li>
 				<li><a href="../final/recipes.html">Recipes</a>
@@ -36,7 +35,7 @@
                         <li><a href="../final/dinner.html">Dinner Recipes</a></li>
 
                     </ul></li>
-				<li><a href="../final/shopping.html">Grocery List</a></li>
+
 				<li><a href="../final/about.html">About</a>
                     <ul>
                         <li><a href="../final/contact.html">Contact Me</a></li>
@@ -45,14 +44,39 @@
             </ul>
 
         </nav>
+		<img id="logo" src="../final/images/logo.png" alt="vegan4one logo">
+		<h1 id="title">Vegan 4 One</h1>
+		<h4 id="tag">Food for yourself!</h4>
 
 
-	</header> <div id="search"><script async src="https://cse.google.com/cse.js?cx=011181468143127248327:6ulozd0asjm"></script>
+
+
+	</header>
+
+    <!--back to top anchor-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script type="text/javascript" src="../final/scrollbutton.js"></script>
+
+     <div id="search"><script async src="https://cse.google.com/cse.js?cx=011181468143127248327:6ulozd0asjm"></script>
 <div class="gcse-search"></div></div>
 
-<div class="container">
+<div id="wrapper">
 
-    <article class="recipe">
+<!--left nutrition information column-->
+
+<div id="leftcolumn">
+    <aside class="nutritioncontainer">
+<a name="nutrition"></a>
+
+    <h4 id="nuttitle">Nutrition Information*</h4>
+        <a href="https://www.verywellfit.com/recipe-nutrition-analyzer-4157076" target="_blank"><img width="320" height="604" src="https://www.verywellfit.com/thmb/ZsUhroTbie6nMhKI-H8zYhD_YW0=/1000x0/Nutrition-Label-Embed-1621934650-3e559c93c8fb45f3b10b5055661b5f46.png" /></a>
+
+   </aside></div>
+
+    <!--right recipe information column-->
+    <div id="rightcolumn">
+
+    <article class="recipe"><a name="recipe"></a>
     <h1 id="rtitle">Tacos with Avocado Crema</h1>
 
     <div class="foodimg">
@@ -63,7 +87,7 @@
 
     </div>
 
-    <div class="ingredients">
+    <div class="ingredients"><a name="ingredients"></a>
     <h3 id="ingtitle">Ingredients</h3>
     <ul>
 
@@ -97,6 +121,7 @@
 
     </div>
     <div class="directions">
+    <a name="directions"></a>
     <h3 id="dirtitle">Recipe</h3>
     <ol>
 
@@ -124,21 +149,25 @@
     <p> Serve with your favorite toppings. <br>
     Use in a burrito with vegan cheese and grill for a crispy burrito <br>
     Make extra and serve over rice as taco bowls...this is a great leftover lunch option.</p>
-    </div>
+      </div></article></div>
 
-    <div class="nutrition">
-    <h4 id="nuttitle">Nutrition Information*</h4>
-        <a href="https://www.verywellfit.com/recipe-nutrition-analyzer-4157076" target="_blank"><img width="320" height="604" src="https://www.verywellfit.com/thmb/ZsUhroTbie6nMhKI-H8zYhD_YW0=/1000x0/Nutrition-Label-Embed-1621934650-3e559c93c8fb45f3b10b5055661b5f46.png" /></a>
-
-    </div>
-
-
-    </article>
 
 </div>
 
 
-<div class="container">
+<div class="breadcontainer">
+
+<ul class="breadcrumb">
+  <li><a href="#recipe">Recipe</a></li>
+  <li><a href="#ingredients">Ingredients</a></li>
+  <li><a href="#directions">Directions</a></li>
+  <li> <a href="#nutrition""> Nutrition</a></li>
+
+</ul>
+</div>
+
+
+<div class="footercontainer">
     <footer>
     <a href="../final/privacy.html">Privacy Policy</a><br>
     <a href="../final/sitemap.xml">Sitemap</a>

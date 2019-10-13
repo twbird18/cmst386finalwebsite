@@ -5,9 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="This site contains simple vegan dishes for one person or for meal prep.">
-    <meta name="keywords" content="vegan, cooking for one, recipes, food, meal prep">
-
-    <title>Vegan4One</title>
+    <meta name="keywords" content="vegan, cooking for one, recipes, food, Sushi Bowl">
+<meta name="robots" content="index">
+    <meta name="author" content="Jennifer Brady">
+    <title>Vegan4One - Sushi Bowl</title>
 
 	<!--favicon addition-->
 	<link rel="icon" href="../final/images/favicon.png" type="image/gif">
@@ -22,11 +23,7 @@
 
 <body>
 	<header>
-		<img id="logo" src="../final/images/logo.png" alt="vegan4one logo">
-		<h1 id="title">Vegan 4 One</h1>
-		<h4 id="tag">Food for yourself!</h4>
-
-        <nav id="mainnav">
+      <nav id="mainnav">
             <ul>
             	<li><a href="../final/index.html">Home</a></li>
 				<li><a href="../final/recipes.html">Recipes</a>
@@ -36,7 +33,7 @@
                         <li><a href="../final/dinner.html">Dinner Recipes</a></li>
 
                     </ul></li>
-				<li><a href="../final/shopping.html">Grocery List</a></li>
+
 				<li><a href="../final/about.html">About</a>
                     <ul>
                         <li><a href="../final/contact.html">Contact Me</a></li>
@@ -46,13 +43,38 @@
 
         </nav>
 
+		<img id="logo" src="../final/images/logo.png" alt="vegan4one logo">
+		<h1 id="title">Vegan 4 One</h1>
+		<h4 id="tag">Food for yourself!</h4>
 
-	</header> <div id="search"><script async src="https://cse.google.com/cse.js?cx=011181468143127248327:6ulozd0asjm"></script>
+
+
+	</header>
+      <!--back to top anchor-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script type="text/javascript" src="../final/scrollbutton.js"></script>
+    <div id="search"><script async src="https://cse.google.com/cse.js?cx=011181468143127248327:6ulozd0asjm"></script>
 <div class="gcse-search"></div></div>
 
-<div class="container">
 
-    <article class="recipe">
+
+<div id="wrapper">
+
+<!--left nutrition information column-->
+
+<div id="leftcolumn">
+    <aside class="nutritioncontainer">
+<a name="nutrition"></a>
+
+    <h4 id="nuttitle">Nutrition Information*</h4>
+    <a href="https://www.verywellfit.com/recipe-nutrition-analyzer-4157076" target="_blank"><img width="320" height="604" src="https://www.verywellfit.com/thmb/JoxaR0q1msGjS43-n4skhGxkPjA=/1000x0/Nutrition-Label-Embed--268526596-e38248d143ad47d1842f2576ddd0b132.png" /></a>
+
+    </aside></div>
+
+    <!--right recipe information column-->
+    <div id="rightcolumn">
+
+    <article class="recipe"><a name="recipe"></a>
     <h1 id="rtitle">Sushi Bowl</h1>
 
     <div class="foodimg">
@@ -63,7 +85,7 @@
 
     </div>
 
-    <div class="ingredients">
+    <div class="ingredients"><a name="ingredients"></a>
     <h3 id="ingtitle">Ingredients</h3>
     <ul>
 <li>3/4 cup <a href="https://itdoesnttastelikechicken.com/the-easiest-way-to-make-perfect-sushi-rice/" target="_blank">sushi rice</a>  (or even leftover rice)</li>
@@ -80,6 +102,7 @@
 
     </div>
     <div class="directions">
+     <a name="directions"></a>
     <h3 id="dirtitle">Recipe</h3>
    <ol>
 <li>Place rice into bowl.</li>
@@ -87,7 +110,7 @@
 <li>Cut cucumber into matchsticks. Peel if preferred. </li>
 <li>Peel and wash carrot. Then continue using vegetable peeler to create strips of carrot.</li>
 <li>Cut avocado into slices.</li>
-<li>Add carrot, cucumber, edamame & avocado to bowl.</li>
+<li>Add carrot, cucumber, edamame & avocado (see <a href="#video">below</a> to use your avocado as decoration) to bowl.</li>
 <li>Quickly toast Nori in pre-heated pan. Turning often to prevent burning. Remove when crispy.</li>
 <li>Crunch nori sheet over bowl & top with sesame seeds.</li>
 <li>Mix Mayo & sriracha together.</li>
@@ -99,21 +122,31 @@
     <h3 id="addtitle">Information</h3>
     <p>Serve with skillet potatoes, as a burrito, or with toast. Top with Avocado, Salsa, fresh Tomato, or Hemp Hearts. </p>
     <p> Freeze leftovers up to 1 month or refrigerate for up to 5 days. </p>
-    </div>
+   </div></article></div>
 
-    <div class="nutrition">
-    <h4 id="nuttitle">Nutrition Information*</h4>
-    <a href="https://www.verywellfit.com/recipe-nutrition-analyzer-4157076" target="_blank"><img width="320" height="604" src="https://www.verywellfit.com/thmb/JoxaR0q1msGjS43-n4skhGxkPjA=/1000x0/Nutrition-Label-Embed--268526596-e38248d143ad47d1842f2576ddd0b132.png" /></a>
-
-    </div>
-
-
-    </article>
 
 </div>
 
+<div class="vidcontainer"><a name="video"></a>
+<h2>Avocado Rose Decoration</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G9QhGv7-MN0?start=270" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h4><a href="https://youtu.be/G9QhGv7-MN0">Video from Avant Garde Vegan</a></h4>
+<p>Food is better when it's pretty. Learn how to cut your avocado into a decorative rose from Avant Garde Vegan</p>
+</div>
 
-<div class="container">
+
+<div class="breadcontainer">
+
+<ul class="breadcrumb">
+  <li><a href="#recipe">Recipe</a></li>
+  <li><a href="#ingredients">Ingredients</a></li>
+  <li><a href="#directions">Directions</a></li>
+  <li> <a href="#nutrition""> Nutrition</a></li>
+
+</ul>
+</div>
+
+<div class="footercontainer">
     <footer>
     <a href="../final/privacy.html">Privacy Policy</a><br>
     <a href="../final/sitemap.xml">Sitemap</a>
